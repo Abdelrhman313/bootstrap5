@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/lightGallery.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- ****************************************** loading page ******************************************** -->
+    <div class="loading" id="loadSection">
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- ****************************************** Navbar ******************************************** -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-body border-bottom shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fs-3" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-text-right fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6">
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#clients">clients</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#testimonials">testimonials</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-2 py-1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ****************************************** Header ******************************************** -->
+    <header id="header" class="vh-100 d-flex align-items-center overflow-hidden">
+        <div class="container position-relative">
+            <h1 class="mb-2" data-aos-duration="1000" data-aos="fade-right">Lorem ipsum <span class="text-primary">consectetur.</span></h1>
+            <h4 class="text-muted mb-4" data-aos-duration="1250" data-aos="fade-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+            <div data-aos="fade-up" data-aos-duration="1500" class="btn-group mt-2 d-flex flex-column flex-sm-row">
+                <button class="btn btn-primary px-3 py-2 ms-2 flex-grow-0 mb-3 mb-sm-0">Get Started</button>
+                <button class="btn btn-outline-primary px-3 py-2 ms-2 flex-grow-0" data-bs-toggle="modal"
+                    data-bs-target="#modelId">
+                    <i class="bi bi-play-circle me-1"></i>
+                    Watch Video
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ****************************************** About ******************************************** -->
+    <div id="about" style="padding: 50px 0px" class="overflow-hidden">
+        <div class="container">
+            <div class="main-info text-center">
+                <span class="d-inline-block mb-4 bg-body shadow border text-primary px-4 py-2">ABOUT</span>
+                <h2 class="mb-3">Lorem ipsum dolor sit amet.</h2>
+                <p class="w-75 m-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    praesentium dolore labore repudiandae nesciunt, aut nam voluptatem maiores vitae quisquam.</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 p-4 border shadow bg-light mb-4 mb-lg-0" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="images/about.jpg" alt="about" class="img-fluid h-100">
+                </div>
+                <div class="col-lg-6 p-sm-4 px-sm-5 ps-3" data-aos="flip-right" data-aos-duration="1000">
+                    <h4 class="mb-3">Lorem ipsum dolor sit amet.</h4>
+                    <p class="mb-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis neque
+                        quisquam est qui? Sed odio obcaecati ipsa quae numquam. Asperiores.</p>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-4">
+                            <div class="bg-body shadow rounded-circle me-4 flex-shrink-0 d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;">
+                                <i class="bi bi-book fs-3 text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Lorem ipsum dolor sit.</h5>
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repudiandae ab nobis.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <div class="bg-body shadow rounded-circle me-4 flex-shrink-0 d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;">
+                                <i class="bi bi-book fs-3 text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Lorem ipsum dolor sit.</h5>
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repudiandae ab nobis.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="bg-body shadow rounded-circle me-4 flex-shrink-0 d-flex justify-content-center align-items-center"
+                                style="width: 70px;height: 70px;">
+                                <i class="bi bi-book fs-3 text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Lorem ipsum dolor sit.</h5>
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repudiandae ab nobis.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** Progress section *************************************** -->
+    <div id="progressSection" class="Progress-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bars pe-lg-5">
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>Html</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>CSS</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>JavaScript</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="30"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bars ps-lg-5">
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>Bootstrap</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>Jquery</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="prog">
+                            <div class="progress-label d-flex justify-content-between mb-2">
+                                <span>Angular</span>
+                                <span class="progress-value">0</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** counters section *************************************** -->
+    <div id="counterSection" class="counters-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="counter p-4 pb-2 bg-light rounded shadow text-center position-relative">
+                        <div
+                            class="counter-icon bg-primary text-light d-flex justify-content-center align-items-center top-0 start-50 position-absolute translate-middle rounded-circle">
+                            <i class="bi bi-emoji-smile fs-2"></i>
+                        </div>
+                        <h3 class="mt-5 mb-3 counter-value" data-value="120">0</h3>
+                        <p class="text-muted fs-5 fw-500 mb-4">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="counter p-4 pb-2 bg-light rounded shadow text-center position-relative">
+                        <div
+                            class="counter-icon bg-primary text-light d-flex justify-content-center align-items-center top-0 start-50 position-absolute translate-middle rounded-circle">
+                            <i class="bi bi-journal-medical fs-2"></i>
+                        </div>
+                        <h3 class="mt-5 mb-3 counter-value" data-value="90">0</h3>
+                        <p class="text-muted fs-5 fw-500 mb-4">Projects</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="counter p-4 pb-2 bg-light rounded shadow text-center position-relative">
+                        <div
+                            class="counter-icon bg-primary text-light d-flex justify-content-center align-items-center top-0 start-50 position-absolute translate-middle rounded-circle">
+                            <i class="bi bi-headset fs-2"></i>
+                        </div>
+                        <h3 class="mt-5 mb-3 counter-value" data-value="130">0</h3>
+                        <p class="text-muted fs-5 fw-500 mb-4">Houres of Support</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="counter p-4 pb-2 bg-light rounded shadow text-center position-relative">
+                        <div
+                            class="counter-icon bg-primary text-light d-flex justify-content-center align-items-center top-0 start-50 position-absolute translate-middle rounded-circle">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h3 class="mt-5 mb-3 counter-value" data-value="50">0</h3>
+                        <p class="text-muted fs-5 fw-500 mb-4">Hard Workers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** clients section *************************************** -->
+    <div class="clients" id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-1.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-2.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-3.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-4.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-5.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <div class="client-img p-md-4 p-2 pb-0">
+                        <img src="images/clients/client-6.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** clients section *************************************** -->
+    <div class="services overflow-hidden" id="services">
+        <div class="container">
+            <div class="services-info text-center mb-5">
+                <span class="d-inline-block mb-4 bg-body shadow border text-primary px-4 py-2">SERVICES</span>
+                <h2 class="mb-3">Lorem ipsum dolor sit amet.</h2>
+                <p class="w-75 m-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    praesentium dolore labore repudiandae nesciunt, aut nam voluptatem maiores vitae quisquam.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in-right" data-aos-duration="1500">
+                    <div class="service position-relative px-5 py-4 shadow rounded">
+                        <div class="overlay position-absolute w-100 h-100 bg-primary"></div>
+                        <div class="service-info position-relative">
+                            <i class="bi bi-text-left fs-1 text-primary"></i>
+                            <h4 class="mt-3 mb-3 fw-700">Lorem, ipsum dolor.</h4>
+                            <p class="text-muted lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Exercitationem, iure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in-down" data-aos-duration="1500">
+                    <div class="service position-relative px-5 py-4 shadow rounded">
+                        <div class="overlay position-absolute w-100 h-100 bg-primary"></div>
+                        <div class="service-info position-relative">
+                            <i class="bi bi-text-left fs-1 text-primary"></i>
+                            <h4 class="mt-3 mb-3 fw-700">Lorem, ipsum dolor.</h4>
+                            <p class="text-muted lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Exercitationem, iure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <div class="service position-relative px-5 py-4 shadow rounded">
+                        <div class="overlay position-absolute w-100 h-100 bg-primary"></div>
+                        <div class="service-info position-relative">
+                            <i class="bi bi-text-left fs-1 text-primary"></i>
+                            <h4 class="mt-3 mb-3 fw-700">Lorem, ipsum dolor.</h4>
+                            <p class="text-muted lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Exercitationem, iure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="zoom-in-left" data-aos-duration="1500">
+                    <div class="service position-relative px-5 py-4 shadow rounded">
+                        <div class="overlay position-absolute w-100 h-100 bg-primary"></div>
+                        <div class="service-info position-relative">
+                            <i class="bi bi-text-left fs-1 text-primary"></i>
+                            <h4 class="mt-3 mb-3 fw-700">Lorem, ipsum dolor.</h4>
+                            <p class="text-muted lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Exercitationem, iure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** testimonials section *************************************** -->
+    <div id="testimonials" class="carousel slide overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/testimonials/testimonials-1.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5 class="mb-3 mt-2">Second slide label</h5>
+                    <p class="px-5 px-md-0">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/testimonials/testimonials-2.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5 class="mb-3 mt-2">Second slide label</h5>
+                    <p class="px-5 px-md-0">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/testimonials/testimonials-3.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5 class="mb-3 mt-2">Second slide label</h5>
+                    <p class="px-5 px-md-0">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonials"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- **************************************** portfolio section *************************************** -->
+    <div id="portfolio" class="portfolio overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+            <div class="portfolio-info text-center mb-5">
+                <span class="d-inline-block mb-4 bg-body shadow border text-primary px-4 py-2">PORTFOLIO</span>
+                <h2 class="mb-3">Lorem ipsum dolor sit amet.</h2>
+                <p class="w-75 m-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    praesentium dolore labore repudiandae nesciunt, aut nam voluptatem maiores vitae quisquam.</p>
+            </div>
+            <ul class="list-group list-group-horizontal justify-content-center">
+                <li class="list-group-item d-flex justify-content-between align-items-center px-4 active"
+                    data-filter="all">
+                    All
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-filter="Web">
+                    Web
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-filter="Mobile">
+                    Mobile
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-filter="Network">
+                    Network
+                </li>
+            </ul>
+            <div id="lightgallery" class="row lightgallery mt-4">
+                <a href="images/portfolio/portfolio-1.jpg" class="col-12 col-md-6 col-lg-4 mb-4 Web">
+                    <img src="images/portfolio/portfolio-1.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+
+                <a href="images/portfolio/portfolio-2.jpg" class="col-12 col-md-6 col-lg-4 mb-4 Web">
+                    <img src="images/portfolio/portfolio-2.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+
+                <a href="images/portfolio/portfolio-3.jpg" class="col-12 col-md-6 col-lg-4 mb-4 Mobile">
+                    <img src="images/portfolio/portfolio-3.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+
+                <a href="images/portfolio/portfolio-4.jpg" class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 Mobile">
+                    <img src="images/portfolio/portfolio-4.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+
+                <a href="images/portfolio/portfolio-5.jpg"
+                    class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 mb-md-0 Network">
+                    <img src="images/portfolio/portfolio-5.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+
+                <a href="images/portfolio/portfolio-6.jpg"
+                    class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 mb-md-0 Network">
+                    <img src="images/portfolio/portfolio-6.jpg" alt="portfolio-img"
+                        class="w-100 h-100 img-fluid p-2 bg-body shadow rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** contact section *************************************** -->
+    <div id="contact" class="contact overflow-hidden">
+        <div class="container">
+            <div class="contact-info text-center mb-5">
+                <span class="d-inline-block mb-4 bg-body shadow border text-primary px-4 py-2">CONTACT US</span>
+                <h2 class="mb-3">Lorem ipsum dolor sit amet.</h2>
+                <p class="w-75 m-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    praesentium dolore labore repudiandae nesciunt, aut nam voluptatem maiores vitae quisquam.</p>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="info text-center text-muted p-3 pt-4 shadow rounded mb-3">
+                                <i class="bi bi-geo-alt fs-2 text-primary bg-body rounded-circle mb-3"></i>
+                                <h4>Our Address</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="info text-center text-muted p-3 pt-4 shadow rounded mb-3 mb-md-0">
+                                <i class="bi bi-envelope fs-2 text-primary bg-body rounded-circle mb-3"></i>
+                                <h4>Email</h4>
+                                <p>test123@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="info text-center text-muted p-3 pt-4 shadow rounded mb-5 mb-lg-0">
+                                <i class="bi bi-telephone-plus fs-2 text-primary bg-body rounded-circle mb-3"></i>
+                                <h4>Call Us</h4>
+                                <p>+02 123 4567 8901</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="1500">
+                            <div class="map p-3 shadow rounded mb-5 mb-lg-0 h-100">
+                                <div class="gmap_canvas h-100">
+                                    <iframe id="gmap_canvas" height="100%" width="100%"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27747.2955738619!2d31.245921750771124!3d29.62077645783314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1459b7fcd99619fb%3A0x445de4f71c6eaf6!2sAl%20Ayyat%2C%20Madinet%20Al%20Ayat%2C%20El%20Ayyat%2C%20Giza%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1652531236417!5m2!1sen!2sus"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-down-left" data-aos-duration="1500">
+                            <form class="row g-3 needs-validation p-4 shadow rounded mt-5 mt-lg-0" novalidate>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="validationCustom01"
+                                        placeholder="Your Name" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="validationCustom02"
+                                        placeholder="Your E-mail" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="validationCustom03"
+                                        placeholder="Your Subject" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" class="w-100 form-control"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** Footer section *************************************** -->
+    <footer id="footer" class="text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 ps-5 ps-lg-0">
+                    <h4 class="mb-3">Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti inventore adipisci nemo
+                        laborum consequatur!</p>
+                    <p><span class="fw-bolder">E-mail: </span>test1234@mail.com</p>
+                    <p><span class="fw-bolder">Phone: </span>+02 123 4567 890</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 ps-5">
+                    <h5 class="mb-4">Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0 ps-5">
+                    <h5 class="mb-4">Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                        <li class="text-muted mb-1">
+                            <i class="bi bi-caret-right-fill text-primary"></i>
+                            Home
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0 ps-5 ps-lg-0">
+                    <h4 class="mb-4">Lorem, ipsum dolor.</h4>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, illum.</p>
+                    <ul class="list-unstyled list-group list-group-horizontal">
+                        <li>
+                            <a href="javascript:void(0)" class="d-block px-2 py-1 bg-primary me-2 rounded">
+                                <i class="bi bi-twitter text-light fs-6"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="d-block px-2 py-1 bg-primary me-2 rounded">
+                                <i class="bi bi-facebook text-light fs-6"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="d-block px-2 py-1 bg-primary me-2 rounded">
+                                <i class="bi bi-instagram text-light fs-6"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="d-block px-2 py-1 bg-primary me-2 rounded">
+                                <i class="bi bi-skype text-light fs-6"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="d-block px-2 py-1 bg-primary me-2 rounded">
+                                <i class="bi bi-linkedin text-light fs-6"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ****************************************** Video Model ******************************************** -->
+    <div class="modal fade overflow-hidden" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary">Website Video</h5>
+                    <button type="button" id="closeBtn" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls id="myVideo" class="d-block w-75 m-auto" style="height: 80vh;"
+                        poster="/images/hero-bg.jpg">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="js/lightGallery.js"></script>
+    <script src="js/scrollOut.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
