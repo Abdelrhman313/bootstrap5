@@ -1,0 +1,351 @@
+/* for all */
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    position: relative;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-x:hidden ;
+}
+/* ******************************************************************************************* */
+/* loading */
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: #0d6efd;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(141.4% at 100% 0);
+    transition: all 1s ease-in-out;
+}
+
+.loading .circles {
+    width: 120px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(4, 20px);
+    justify-content: space-between;
+    align-content: space-between;
+    transform: rotate(-45deg);
+}
+
+.loading .circles span {
+    border-radius: 50%;
+    background-color: #fdfdfd;
+    animation: scale 1.6s linear infinite;
+}
+
+@keyframes scale {
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+.loading .circles span:nth-of-type(4n+3) {
+    animation-delay: 300ms;
+}
+
+.loading .circles span:nth-of-type(4n+2) {
+    animation-delay: 600ms;
+}
+
+.loading .circles span:nth-of-type(4n+1) {
+    animation-delay: 900ms;
+}
+
+.fadeOutLoader {
+    clip-path: circle(0% at 100% 0);
+}
+
+.resetDefault {
+    overflow-y: scroll !important;
+}
+/* ******************************************************************************************* */
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover::before {
+    color: #0d6efd;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active::before {
+    color: #0d6efd;
+    width: 100%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media(max-width: 992px) {
+
+    .navbar-light .navbar-nav .nav-link::before {
+        left: 40%;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 12%;
+        left: 44%;
+    }
+
+    ul.dropdown-menu.show {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
+/* ******************************************************************************************* */
+/* Header */
+header {
+    position: relative;
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: hwb(0deg 100% 0% / 60%);
+}
+/* ******************************************************************************************* */
+/* about */
+#about {
+    background-color: #ebf3ff;
+}
+/* ******************************************************************************************* */
+/* Progress-section */
+.Progress-section {
+    padding: 50px 0px;
+}
+
+.Progress-section .bars .prog {
+    margin-bottom: 25px;
+}
+
+.Progress-section .bars .prog span.progress-value::after {
+    content: "%";
+}
+
+.Progress-section .bars .prog .progress {
+    height: 1.5rem;
+}
+
+.Progress-section .bars .prog .progress .progress-bar {
+    transition: all 0.6s ease-in-out;
+}
+/* ******************************************************************************************* */
+/* counters-section */
+.counters-section {
+    padding: 100px 0px 75px;
+    cursor: pointer;
+}
+
+.counter {
+    background-color: #ebf3ff;
+}
+
+.counters-section .counter:hover .bi {
+    transform: rotate(360deg);
+}
+
+.counters-section .counter:hover .counter-value {
+    color: #0d6efd;
+}
+
+.counters-section .counter-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.counters-section .counter-icon .bi,
+.counters-section .counter .counter-value {
+    transition: all 0.5s ease-in-out;
+}
+/* ******************************************************************************************* */
+/* clients */
+.clients {
+    padding: 50px 0px;
+    background-color: #ebf3ff;
+}
+
+@media(max-width: 992px) {
+    .client-img.p-md-4.p-2.pb-0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client-img.p-md-4.p-2.pb-0 img {
+        width: 70%;
+        height: 70%;
+    }
+}
+/* ******************************************************************************************* */
+/* Services */
+.services {
+    padding: 50px 0px;
+}
+
+.services .service {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.services .service * {
+    transition: all 0.3s ease-in-out;
+}
+
+.services .service:hover .overlay {
+    top: 0%;
+}
+
+.services .service:hover * {
+    color: #ebf3ff !important;
+}
+
+.services .service .overlay {
+    inset: 0;
+    top: 100%;
+    transition: all 0.3s ease-in-out;
+}
+/* ******************************************************************************************* */
+/* carousel */
+.carousel {
+    background-image: url("../images/testimonials-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel .carousel-indicators {
+    bottom: -14px;
+    padding-bottom: 25px;
+}
+
+.carousel .carousel-indicators button {
+    height: 5px;
+}
+
+.carousel button.active {
+    background-color: #438eff;
+}
+
+.carousel .carousel-inner {
+    padding: 50px 0px;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.carousel img.d-block {
+    width: 150px !important;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+    background-color: #438eff;
+}
+
+.carousel .carousel-caption {
+    position: unset;
+    padding-bottom: 0.5rem;
+}
+
+@media(max-width: 575px) {
+    .carousel img.d-block {
+        width: 100px !important;
+        height: 100px;
+    }
+}
+/* ******************************************************************************************* */
+/* portfolio */
+.portfolio{
+    padding: 50px 0px 80px;
+}
+.portfolio img{
+    object-fit: cover;
+}
+.portfolio .lightgallery a{
+    animation: grow 1s linear 1;
+}
+.lightgallery a.show-item{
+    display: block;
+}
+.lightgallery a.hidden-item{
+    display: none;
+}
+@keyframes grow {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* ******************************************************************************************* */
+/* contact */
+.contact{
+    padding: 20px 0px 80px;
+}
+.contact .info i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-style: dotted;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.contact form textarea{
+    height: 150px;
+    resize: none;
+}
+/* ******************************************************************************************* */
+/* footer */
+footer{
+    padding: 50px 0px;
+    background-color: #ebf3ff;
+}
+footer a{
+    transition: all 0.4s ease-in-out;
+}
+footer a:hover{
+    transform: translateY(3px);
+}
